@@ -1,0 +1,34 @@
+{
+  "name": "eslint-config-pagarme",
+  "version": "1.0.0",
+  "description": "Pagar.me's JS + JSX ESLint config, following our styleguide",
+  "main": ".eslintrc.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pagarme/javascript-style-guide.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "pagarme",
+    "javascript",
+    "jsx",
+    "react",
+    "styleguide"
+  ],
+  "author": "Pagar.me Pagamentos S/A <@pagarme>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pagarme/javascript-style-guide/issues"
+  },
+  "homepage": "https://github.com/pagarme/javascript-style-guide#readme",
+  "peerDependencies": {
+    "eslint": "3.19.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.1.0"
+  },
+  "dependencies": {
+    "eslint-config-airbnb": "11.2.0"
+  }
+}
