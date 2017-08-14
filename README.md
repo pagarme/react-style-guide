@@ -18,11 +18,20 @@ we higly recommend to read it prior to this document.
 # Installing
 
 The rules described in this repository are also available as a NPM package.
-To install it:
+To install the package and its dependencies:
 
 ```shell
-$ npm install --save-dev eslint@3.19.0 eslint-plugin-import@2.6.1 eslint-config-pagarme-react
+$ npm install --save-dev eslint@4.3.0 \
+                         eslint-plugin-jsx-a11y@5.1.1 \
+                         eslint-plugin-import@2.7.0 \
+                         eslint-plugin-react@7.1.0 \
+                         eslint-config-pagarme-react
 ```
+
+> The peer dependencies specified above have hardcoded versions.
+> If you prefer you can use the command
+> `npm info eslint-config-pagarme-react@latest peerDependencies`
+> to find the exact peer dependencies to install.
 
 To include in the project, create an `.eslintrc` file with at least the
 following contents:
