@@ -13,5 +13,6 @@ module.exports = {
         functions: 'never',
       },
     ],
+    'react/jsx-filename-extension': [2, 'never'],
   },
 }
