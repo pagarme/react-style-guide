@@ -467,7 +467,7 @@ import classNames from 'classnames'
 import style from './style.css'
 
 const Button = ({ children, className }) =>
-  <button className={classNames(style.input, className)}>
+  <button className={classNames(style.button, className)}>
     {children}
   </button>
 
@@ -478,7 +478,7 @@ export default Button
 <td>
 
 ```css
-.input {
+.button {
   box-sizing: border-box;
   padding: 10px;
   width: 100%;
@@ -575,7 +575,7 @@ const Reviews = ({ items }) =>
     )}
   </button>
 
-export default Button
+export default Reviews
 ```
 
 </td>
