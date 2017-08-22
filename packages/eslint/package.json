@@ -2,7 +2,7 @@
   "name": "eslint-config-pagarme-react",
   "version": "1.0.0",
   "description": "Pagar.me's JS + JSX ESLint config, following our styleguide",
-  "main": ".eslintrc.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pagarme/react-style-guide.git"
