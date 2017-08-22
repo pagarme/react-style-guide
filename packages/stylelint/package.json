@@ -1,0 +1,27 @@
+{
+  "name": "stylelint-config-pagarme-react",
+  "version": "1.0.0",
+  "description": "Pagar.me CSS modules stylelint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pagarme/react-style-guide.git"
+  },
+  "keywords": [
+    "react",
+    "style guide",
+    "css modules"
+  ],
+  "author": "Pagar.me Pagamentos S/A",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pagarme/react-style-guide/issues"
+  },
+  "homepage": "https://github.com/pagarme/react-style-guide#readme",
+  "dependencies": {
+    "stylelint-config-standard": "17.0.0"
+  }
+}

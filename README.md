@@ -26,6 +26,8 @@ $ npm install --save-dev eslint@4.3.0 \
                          eslint-plugin-import@2.7.0 \
                          eslint-plugin-react@7.1.0 \
                          eslint-config-pagarme-react
+                         csslint@8.0.0 \
+                         csslint-config-pagarme-react \
 ```
 
 > The peer dependencies specified above have hardcoded versions.
