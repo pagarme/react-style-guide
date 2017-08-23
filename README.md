@@ -35,8 +35,10 @@ $ npm install --save-dev eslint@4.3.0 \
 > `npm info eslint-config-pagarme-react@latest peerDependencies`
 > to find the exact peer dependencies to install.
 
-To include in the project, create an `.eslintrc` file with at least the
-following contents:
+To include in the project, create the config files in your project, with
+at least the following contents:
+
+> `.eslintrc`
 
 ```json
 {
@@ -46,6 +48,14 @@ following contents:
   }
 }
 ```
+
+> `.stylelintrc`
+```
+{
+  "extends": ["pagarme-react"]
+}
+```
+
 
 # Table of contents
 
