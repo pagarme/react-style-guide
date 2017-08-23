@@ -69,7 +69,7 @@ at least the following contents:
   - [Camel case instead of dash-case for class names](#camel-case-instead-of-dash-case-for-class-names)
   - [Never use ID and tag name as root selectors!](#never-use-id-and-tag-name-as-root-selectors)
   - [When using multiple selectors, give each selector its own line](#when-using-multiple-selectors-give-each-selector-its-own-line)
-  - [Break lines in CSS function arguments, keep a dangling comma](#break-lines-in-css-function-arguments-keep-a-dangling-comma)
+  - [Break lines in CSS function arguments](#break-lines-in-css-function-arguments)
   - [When writing rules, be sure to](#when-writing-rules-be-sure-to)
 - [Design Patterns](#css-design-patterns)
   - [The parent constrains the child](#the-parent-constrains-the-child)
@@ -308,11 +308,11 @@ exceed the limit of 80 columns.
 
 [:arrow_up: Back to top][table-of-contents]
 
-### Break lines in CSS function arguments, keep a dangling comma
+### Break lines in CSS function arguments
 
 With 80 columns and CSS variables comes the need to break lines. When
-breaking, keep one argument per line, and leave a dangling comma at the
-last argument.
+breaking, be sure to do right after the colon, and keep one argument per
+line.
 
 <table>
 <thead>
@@ -325,11 +325,12 @@ last argument.
 
 ```css
 .container {
-  background-color: linear-gradient(
-    0deg,
-    var(--color-light-yellow-12),
-    var(--color-light-yellow-10),
-  );
+  background-color:
+    linear-gradient(
+      0deg,
+      var(--color-light-yellow-12),
+      var(--color-light-yellow-10),
+    );
 }
 ```
 
@@ -739,11 +740,12 @@ To define a variable accessible globally:
 
 ```css
 .container {
-  background-color: linear-gradient(
-    0deg,
-    var(--color-green-1),
-    var(--color-green-2),
-  );
+  background-color:
+    linear-gradient(
+      0deg,
+      var(--color-green-1),
+      var(--color-green-2)
+    );
 }
 ```
 
