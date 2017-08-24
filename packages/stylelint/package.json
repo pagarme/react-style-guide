@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-pagarme-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Pagar.me CSS modules stylelint config",
   "main": "index.js",
   "scripts": {
