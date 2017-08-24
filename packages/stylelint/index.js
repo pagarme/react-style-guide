@@ -33,7 +33,7 @@ module.exports = {
     'selector-combinator-space-after': 'always',
     'selector-max-class': 1,
     'selector-max-id': 0,
-    'selector-max-type': [0, { 'ignore': ['child', 'descendant '] } ],
+    'selector-max-type': [0, { 'ignore': ['child', 'descendant'] } ],
     'selector-no-qualifying-type': true,
     'selector-no-vendor-prefix': true,
     'selector-pseudo-class-parentheses-space-inside': 'never',
