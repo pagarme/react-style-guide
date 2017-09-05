@@ -83,17 +83,22 @@ at least the following contents:
 
 All components (presentation, containers or pages) should **always** be
 defined as a directory, named with pascal casing. The main component file
-should be `index.js` and main stylesheet `style.css`. E.g.:
+should be `index.js`, main stylesheet `style.css`. CSS custom properties
+can be kept in `properties.css`:
 
 ```
 AwesomeCard/
 ├── index.js
+├── properties.css
 └── style.css
 ```
 
 * Styles should always be defined in a separate CSS file
 * Avoid prefixing or suffixing component names
-  - E.g.: `lib/pages/UserPage` or `lib/container/LoginContainer`
+  - E.g.: `lib/pages/UserPage` or `lib/container/UserContainer`
+* On conflict rename on import time
+  - `import UserContainer from '...'`
+  - `import { User as UserContainer } from '...'`
 
 [:arrow_up: Back to top][table-of-contents]
 
@@ -708,9 +713,8 @@ export default Button
 ### Variables, lots of variables!
 
 We encourage the "variabilification". Always define variables to increase
-reuse and make styles more consistent. The CSS specification defines a way
-to declare native variables that are very interesting. We adopted them as
-the standard.
+reuse and make styles more consistent. The CSS4 specification defines a way
+to declare native variables. We adopted them as the standard.
 
 To define a variable accessible globally:
 
