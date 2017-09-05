@@ -12,7 +12,7 @@ This guide was created to be a quick start for new developers understand
 the React code style we adopted here at Pagar.me and some practices
 considered good.
 
-As this guide is an extension of our [JavaScript style guide](js-style-guide)
+As this guide is an extension of our [JavaScript style guide](https://github.com/pagarme/javascript-style-guide)
 we higly recommend to read it prior to this document.
 
 # Installing
