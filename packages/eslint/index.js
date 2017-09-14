@@ -14,5 +14,13 @@ module.exports = {
       },
     ],
     'react/jsx-filename-extension': [2, 'never'],
+    'jsx-a11y/label-has-for': [2, {
+      required: {
+        components: ['label'] ,
+        required : {
+          some : ['nesting', 'id']
+        }
+      },
+    }],
   },
 }
