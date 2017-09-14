@@ -76,7 +76,7 @@ at least the following contents:
   - [The parent doesn't assume child structure](#the-parent-doesnt-assume-child-structure)
   - [Components never leak margin](#components-never-leak-margin)
   - [The parent spaces the children](#the-parent-spaces-the-children)
-  - [Nested classes are useless](#nested-classes-are-useless)
+  - [Nested classes aren't for providing scope](#nested-classes-arent-for-providing-scope)
   - [Variables, lots of variables!](#variables-lots-of-variables)
 
 # Component definition
@@ -616,9 +616,12 @@ export default Reviews
 
 [:arrow_up: Back to top][table-of-contents]
 
-### Nested classes are useless
+### Nested classes aren't for providing scope
 
-CSS modules already provides us scope. We don't need to use nested classes.
+CSS modules already provides us scope. We don't need to use nested classes
+for providing scope isolation. Use nested class selectors for modifying
+children based on parent class. A use case is when a component is in
+error or success state:
 
 <table>
 <thead>
@@ -668,8 +671,8 @@ export default Button
 </thead>
 <tbody>
 <thead>
-<th><code>lib/components/Button/index.js</code></th>
-<th><code>lib/components/Button/style.css</code></th>
+<th><code>lib/components/Input/index.js</code></th>
+<th><code>lib/components/Input/style.css</code></th>
 </thead>
 <tbody>
 <tr>
@@ -678,28 +681,22 @@ export default Button
 ```js
 import style from './style.css'
 
-const Button = ({ children }) =>
-  <button className={style.button}>
-    <img className={style.icon} />
-    {children}
-  </button>
+const Input = ({ value, onChange, error }) =>
+  <div className={classNames({ [style.error]: error })}>
+    <input onChange={onChange} />
+    <p>{error}</p>
+  </div>
 
-export default Button
+export default Input
 ```
 
 </td>
 <td>
 
 ```css
-.button {
-  box-sizing: border-box;
-  padding: 10px;
-  width: 100%;
-}
-
-.icon {
-  width: 22px;
-  height: 22px;
+.error p {
+  color: red;
+  display: unset;
 }
 ```
 
