@@ -31,7 +31,7 @@ module.exports = {
     'selector-attribute-operator-space-before': 'never',
     'selector-attribute-quotes': 'always',
     'selector-combinator-space-after': 'always',
-    'selector-max-class': 2,
+    'selector-max-class': 3,
     'selector-max-id': 0,
     'selector-max-type': [0, { 'ignore': ['child', 'descendant'] } ],
     'selector-no-qualifying-type': true,
