@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/pagarme/react-style-guide#readme",
   "dependencies": {
-    "eslint-config-airbnb": "15.1.0"
+    "eslint-config-airbnb": "16.1.0"
   }
 }
