@@ -22,7 +22,7 @@ To install the package and its dependencies:
 
 ```shell
 $ npm install --save-dev eslint@4.3.0 \
-                         eslint-plugin-jsx-a11y@5.1.1 \
+                         eslint-plugin-jsx-a11y@6.0.3 \
                          eslint-plugin-import@2.7.0 \
                          eslint-plugin-react@7.1.0 \
                          eslint-config-pagarme-react \
