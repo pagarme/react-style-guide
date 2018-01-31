@@ -2,6 +2,7 @@ module.exports = {
   extends: ['airbnb'],
   rules: {
     semi: [2, 'never'],
+    'function-paren-newline': [0],
     'space-before-function-paren': [2, 'always'],
     'comma-dangle': [
       'error',
