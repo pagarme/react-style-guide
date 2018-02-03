@@ -2,18 +2,17 @@
 
 # React Code Style Guide
 
-The patterns we have been using in our projects
+Our React projects' best practices
 
 <br>
 
 # Introduction
 
-This guide was created to be a quick start for new developers understand
-the React code style we adopted here at Pagar.me and some practices
-considered good.
+This is meant to be a guide to help new developers understand
+the React code style and best practices we adopt here at Pagar.me.
 
-As this guide is an extension of our [JavaScript style guide][js-style-guide]
-we higly recommend to read it prior to this document.
+As this guide is an extension of our [JavaScript style guide][js-style-guide],
+we **highly recommend** reading it before you continue.
 
 # Installing
 
@@ -31,12 +30,11 @@ $ npm install --save-dev eslint@4.3.0 \
 ```
 
 > The peer dependencies specified above have hardcoded versions.
-> If you prefer you can use the command
+> If you prefer you, can use the command
 > `npm info eslint-config-pagarme-react@latest peerDependencies`
 > to find the exact peer dependencies to install.
 
-To include in the project, create the config files in your project, with
-at least the following contents:
+To include in these rules into your project, create the following config files in your root folder:
 
 > `.eslintrc`
 
@@ -104,7 +102,7 @@ AwesomeCard/
 
 # Project organization
 
-Components should be divided in at least three directories:
+Your project components should be seprated in at least three directories:
 
 ```
 awesome-react-project/
@@ -137,23 +135,23 @@ component callbacks.
 Page components can store state, receive route parameters and dispatch
 Redux actions when applicable. Pages are the highest level of application's
 components. They represent the application routes and most times are
-displayed by a router. Pages are also responsible to handle container
-components callbacks and flow data into children containers.
+displayed by a router. Pages are also responsible for handling container
+components callbacks and flowing data into children containers.
 
 [:arrow_up: Back to top][table-of-contents]
 
 # CSS are modules!
 
 We use CSS modules everywhere. CSS modules are great because they provide
-scope to CSS, and allows to create compartmentalized style that doesn't
+scope to CSS and allow us to create compartmentalized styles that don't
 leak to global scope. Here are our good practices of doing CSS modules:
 
 ## Formatting CSS
 
 ### 80 columns, soft tabs of 2 spaces
 
-Keep at 80 columns. This helps when opening multiple splits.
-Use soft tabs of 2 spaces to save space! :stuck_out_tongue:
+Keep your code lines under 80 columns wide. This helps when opening multiple splits.
+Use soft tabs of 2 spaces to save some space! :stuck_out_tongue:
 
 ### Camel case instead of dash-case for class names
 
@@ -277,8 +275,8 @@ img {
 
 ### When using multiple selectors, give each selector its own line
 
-Organize one selector per line, even when placing at the same line doesn't
-exceed the limit of 80 columns.
+Organize one selector per line, even when placing all of them at the same line doesn't
+exceed 80 columns.
 
 <table>
 <thead>
@@ -315,9 +313,7 @@ exceed the limit of 80 columns.
 
 ### Break lines in CSS function arguments
 
-With 80 columns and CSS variables comes the need to break lines. When
-breaking, be sure to do right after the colon, and keep one argument per
-line.
+Sometimes, not to exceed the 80 columns limit, you need to break lines. While at it, be sure to do it right after the colon, and keep at one argument per line.
 
 <table>
 <thead>
@@ -362,10 +358,10 @@ line.
 
 ### When writing rules, be sure to
 
-* Put a space before the opening brace `{` in rule declarations
+* Put a space before the opening brace `{`
 * In properties put a space after (but not before) the `:` character
 * Put closing braces `}` of rule declarations on a new line
-* Put **ONE** blank line between rule declarations
+* Leave **ONE** blank line in between rule declarations
 
 <table>
 <thead>
@@ -456,7 +452,7 @@ export default Input
 
 [:arrow_up: Back to top][table-of-contents]
 
-### The parent doesn't assume child structure
+### The parent doesn't assume the child's structure
 
 Sometimes we don't want to fill the whole width by default. An example is
 the button component, which we want to resize itself based on title width.
