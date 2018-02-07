@@ -30,11 +30,11 @@ $ npm install --save-dev eslint@4.3.0 \
 ```
 
 > The peer dependencies specified above have hardcoded versions.
-> If you prefer you, can use the command
+> If you prefer, you can use the command
 > `npm info eslint-config-pagarme-react@latest peerDependencies`
 > to find the exact peer dependencies to install.
 
-To include in these rules into your project, create the following config files in your root folder:
+To include these rules into your project, create the following config files in your root folder:
 
 > `.eslintrc`
 
@@ -102,7 +102,7 @@ AwesomeCard/
 
 # Project organization
 
-Your project components should be seprated in at least three directories:
+Your project components should be separated in at least three directories:
 
 ```
 awesome-react-project/
