@@ -1,28 +1,64 @@
 module.exports = {
   extends: ['airbnb'],
+  plugins: [
+    'import',
+    'jsx-a11y',
+    'react',
+    'wyze'
+  ],
   rules: {
-    semi: [2, 'never'],
-    'function-paren-newline': [0],
-    'space-before-function-paren': [2, 'always'],
     'comma-dangle': [
       'error',
       {
         arrays: 'always-multiline',
-        objects: 'always-multiline',
-        imports: 'always-multiline',
         exports: 'always-multiline',
         functions: 'never',
-      },
+        imports: 'always-multiline',
+        objects: 'always-multiline'
+      }
     ],
-    'react/jsx-filename-extension': [2, 'never'],
-    'jsx-a11y/label-has-for': [2, {
-      required: {
-        components: ['label'] ,
-        required : {
-          some : ['nesting', 'id']
+    'function-paren-newline': ['error', 'multiline'],
+    'jsx-a11y/label-has-for': [
+      'error',
+      {
+        components: ['label'],
+        required: {
+          some: ['nesting', 'id']
         }
-      },
-    }],
-    "react/jsx-filename-extension": [0],
-  },
+      }
+    ],
+    'max-len': [
+      'error',
+      {
+        code: 80,
+        ignoreComments: true,
+        ignoreRegExpLiterals: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreTrailingComments: true,
+        ignoreUrls: true,
+        tabWidth: 2
+      }
+    ],
+    'multiline-ternary': ['error', 'always'],
+    'no-multiple-empty-lines': [
+      'error',
+      {
+        max: 1,
+        maxEOF: 1
+      }
+    ],
+    'react/jsx-filename-extension': ['off'],
+    'react/jsx-one-expression-per-line': ['off'],
+    'react/sort-prop-types': [
+      'error',
+      {
+        sortShapeProp: true
+      }
+    ],
+    semi: ['error', 'never'],
+    'sort-keys': ['error'],
+    'space-before-function-paren': ['error', 'always'],
+    'wyze/sort-destructuring-keys': ['error', 'asc']
+  }
 }
