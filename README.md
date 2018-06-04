@@ -50,7 +50,7 @@ To include these rules into your project, create the following config files in y
 > `.stylelintrc`
 ```
 {
-  "extends": ["pagarme-react"]
+  "extends": ["stylelint-config-pagarme-react"]
 }
 ```
 
