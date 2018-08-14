@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pagarme-react",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Pagar.me's JS + JSX ESLint config, following our styleguide",
   "keywords": [
     "eslint",
