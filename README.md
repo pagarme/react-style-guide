@@ -20,10 +20,7 @@ The rules described in this repository are also available as a NPM package.
 To install the package and its dependencies:
 
 ```shell
-$ npm install --save-dev eslint@4.3.0 \
-                         eslint-plugin-jsx-a11y@6.0.3 \
-                         eslint-plugin-import@2.7.0 \
-                         eslint-plugin-react@7.1.0 \
+$ npm install --save-dev eslint@4.19.1 \
                          eslint-config-pagarme-react \
                          stylelint@8.0.0 \
                          stylelint-config-pagarme-react \
