@@ -103,7 +103,7 @@ Your project components should be separated in at least three directories:
 
 ```
 awesome-react-project/
-└── lib/
+└── src/
    ├── components/
    ├── containers/
    └── pages/
@@ -136,6 +136,114 @@ displayed by a router. Pages are also responsible for handling container
 components callbacks and flowing data into children containers.
 
 [:arrow_up: Back to top][table-of-contents]
+
+# Code standards
+
+## Destruct your `props`
+
+### More than 2 props from an object been used in the same place should be destructed
+
+
+## Code style
+### Line length should not exceed 80 characters.
+
+### Use explanatory variables
+Bad
+```js
+const onlyNumbersRegex = /^\d+$/
+const validateNumber = message => value => !onlyNumbersRegex.test(value) && message
+
+validateNumber('error message')(1)
+```
+
+Good
+```js
+const onlyNumbersRegex = /^\d+$/
+const getNumberValidation = message => value => !onlyNumbersRegex.test(value) && message
+
+const isNumber = getNumberValidation('error message')
+
+isNumber(1)
+```
+
+### Use searchable names
+Bad
+```js
+setTimeout(doSomething, 86400000)
+```
+
+Good
+```js
+const DAY_IN_MILLISECONDS = 86400000
+
+setTimeout(doSomething, DAY_IN_MILLISECONDS)
+```
+
+
+## Naming
+
+### Test files must start with the class which will be tested followed by `.test`.
+
+### Class and components folders names must start with capital letter.
+
+
+## React peculiarities
+
+### Never "promisify" the `setState`
+It's a small anti-pattern which can cause some problems in the component lifecicle. You can found more arguments about this in [this issue](https://github.com/facebook/react/issues/2642#issuecomment-352135607)
+
+## Mixins
+ - [Do not use mixins](https://reactjs.org/blog/2016/07/13/mixins-considered-harmful.html)
+
+ Why? Mixins introduce implicit dependencies, cause name clashes, and cause snowballing complexity. Most use cases for mixins can be accomplished in better ways via components, higher-order components, or utility modules.
+
+## Components 
+
+### One line props when are more than 2 or big props
+
+Bad
+```jsx
+<button type="submit" disabled onClick={() => null} className="aLongSpecificClassName">
+  Click here
+</button>
+
+<button type="submit" className="aLongSpecificClassName">
+  Click here
+</button>
+
+<button className="aLongSpecificClassName">Click here</button>
+```
+
+Good
+```jsx
+<button
+  className="aLongSpecificClassNameWithLasers"
+  disabled={loading}
+  onClick={() => null}
+  type="submit"
+>
+  Click here
+</button>
+```
+
+### One line component
+Bad
+``` js
+<div className="example"><span class="highlight">Bad</span> example</div>
+```
+
+Good
+``` js
+<div className="example">
+  <span className="highlight">Bad</span>
+  example
+</div>
+```
+
+
+
+
+
 
 # CSS are modules!
 
