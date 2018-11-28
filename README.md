@@ -580,7 +580,7 @@ When building lists or grids:
 import style from './style.css'
 
 const Reviews = ({ items }) =>
-  <div className={style.container}>
+  <button className={style.container}>
     {items.map(item =>
       <img src={item.image} alt={item.title} />
     )}
