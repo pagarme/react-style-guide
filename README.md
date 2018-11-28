@@ -584,7 +584,7 @@ const Reviews = ({ items }) =>
     {items.map(item =>
       <img src={item.image} alt={item.title} />
     )}
-  </button>
+  </div>
 
 export default Reviews
 ```
