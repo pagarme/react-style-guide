@@ -1,6 +1,7 @@
 module.exports = {
   extends: 'stylelint-config-standard',
   rules: {
+    'at-rule-no-unknown': [true, { ignoreAtRules: ['each'] }],
     'at-rule-no-vendor-prefix': true,
     'color-hex-case': 'lower',
     'color-hex-length': 'long',
@@ -34,7 +35,7 @@ module.exports = {
     'selector-max-class': 3,
     'selector-max-id': 0,
     'selector-max-type': [0, { 'ignore': ['child', 'descendant'] } ],
-    'selector-no-qualifying-type': true,
+    'selector-no-qualifying-type': [true, { ignore: ['attribute'] }],
     'selector-no-vendor-prefix': true,
     'selector-pseudo-class-parentheses-space-inside': 'never',
     'selector-pseudo-element-colon-notation': 'single',
