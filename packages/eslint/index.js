@@ -1,10 +1,14 @@
 module.exports = {
   extends: ['airbnb'],
+  'env': {
+    'browser': true,
+    'jest': true,
+  },
   plugins: [
     'import',
     'jsx-a11y',
     'react',
-    'wyze'
+    'react-hooks'
   ],
   rules: {
     'comma-dangle': [
@@ -17,7 +21,7 @@ module.exports = {
         objects: 'always-multiline'
       }
     ],
-    'function-paren-newline': ['error', 'multiline'],
+    'function-paren-newline': ['error', 'consistent'],
     'jsx-a11y/label-has-for': [
       'error',
       {
@@ -40,7 +44,7 @@ module.exports = {
         tabWidth: 2
       }
     ],
-    'multiline-ternary': ['error', 'always'],
+    'multiline-ternary': ['error', 'always-multiline'],
     'no-multiple-empty-lines': [
       'error',
       {
@@ -48,17 +52,13 @@ module.exports = {
         maxEOF: 1
       }
     ],
+    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/rules-of-hooks': 'error',
     'react/jsx-filename-extension': ['off'],
     'react/jsx-one-expression-per-line': ['off'],
-    'react/sort-prop-types': [
-      'error',
-      {
-        sortShapeProp: true
-      }
-    ],
     semi: ['error', 'never'],
     'sort-keys': ['error'],
-    'space-before-function-paren': ['error', 'always'],
-    'wyze/sort-destructuring-keys': ['error', 'asc']
+    'sort-vars': ['error'],
+    'space-before-function-paren': ['error', 'always']
   }
 }
