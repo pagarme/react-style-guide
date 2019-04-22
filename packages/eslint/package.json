@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-pagarme-react",
-  "version": "1.6.0",
+  "version": "2.0.0",
   "description": "Pagar.me's JS + JSX ESLint config, following our styleguide",
   "keywords": [
     "eslint",
@@ -23,15 +23,9 @@
   "author": "Pagar.me Pagamentos S/A <@pagarme>",
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.12.3",
-    "eslint-plugin-react-hooks": "^1.6.0"
+    "eslint": "^5.16.0"
   },
-  "devDependencies": {
-    "eslint": "5.16.0",
+  "dependencies": {
     "eslint-config-airbnb": "17.1.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
