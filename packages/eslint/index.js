@@ -8,7 +8,8 @@ module.exports = {
     'import',
     'jsx-a11y',
     'react',
-    'react-hooks'
+    'react-hooks',
+    'sort-destructure-keys'
   ],
   rules: {
     'comma-dangle': [
@@ -59,6 +60,7 @@ module.exports = {
     semi: ['error', 'never'],
     'sort-keys': ['error'],
     'sort-vars': ['error'],
-    'space-before-function-paren': ['error', 'always']
+    'space-before-function-paren': ['error', 'always'],
+    'sort-destructure-keys/sort-destructure-keys': ['error']
   }
 }
