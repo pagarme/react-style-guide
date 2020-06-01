@@ -190,16 +190,16 @@ setTimeout(doSomething, DAY_IN_MILLISECONDS)
 ## React peculiarities
 
 ### Never "promisify" the `setState`
-It's a small anti-pattern which can cause some problems in the component lifecicle. You can found more arguments about this in [this issue](https://github.com/facebook/react/issues/2642#issuecomment-352135607)
+It's a small anti-pattern which can cause some problems in the component lifecycle. You can find more arguments about this in [this issue](https://github.com/facebook/react/issues/2642#issuecomment-352135607).
 
 ## Mixins
  - [Do not use mixins](https://reactjs.org/blog/2016/07/13/mixins-considered-harmful.html)
 
- Why? Mixins introduce implicit dependencies, cause name clashes, and cause snowballing complexity. Most use cases for mixins can be accomplished in better ways via components, higher-order components, or utility modules.
+ Why? Mixins introduce implicit dependencies, cause name clashes, and cause snowballing complexity. Most use cases for mixins can be accomplished in better ways through components, higher-order components, or utility modules.
 
 ## Components 
 
-### One line props when are more than 2 or big props
+### One line props when there are more than 2 or big props
 
 Bad
 ```jsx
